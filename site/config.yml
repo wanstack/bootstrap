@@ -1,6 +1,7 @@
 languageCode:           "en"
 title:                  "Bootstrap"
 baseURL:                "http://localhost:9001"
+enableInlineShortcodes: true
 
 pygmentsUseClasses:     true
 # you can use ```lang if you want too
