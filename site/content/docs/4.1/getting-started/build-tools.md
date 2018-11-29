@@ -8,12 +8,12 @@ toc: true
 
 ## Tooling setup
 
-Bootstrap uses [NPM scripts](https://docs.npmjs.com/misc/scripts) for its build system. Our [package.json]({{ .Site.Params.repo }}/blob/v{{ .Site.Params.current_version }}/package.json) includes convenient methods for working with the framework, including compiling code, running tests, and more.
+Bootstrap uses [NPM scripts](https://docs.npmjs.com/misc/scripts) for its build system. Our [package.json]({{< param repo >}}/blob/v{{< param current_version >}}/package.json) includes convenient methods for working with the framework, including compiling code, running tests, and more.
 
 To use our build system and run our documentation locally, you'll need a copy of Bootstrap's source files and Node. Follow these steps and you should be ready to rock:
 
 1. [Download and install Node.js](https://nodejs.org/en/download/), which we use to manage our dependencies.
-2. Navigate to the root `/bootstrap` directory and run `npm install` to install our local dependencies listed in [package.json]({{ .Site.Params.repo }}/blob/v{{ .Site.Params.current_version }}/package.json).
+2. Navigate to the root `/bootstrap` directory and run `npm install` to install our local dependencies listed in [package.json]({{< param repo >}}/blob/v{{< param current_version >}}/package.json).
 3. [Install Ruby][install-ruby], install [Bundler][gembundler] with `gem install bundler`, and finally run `bundle install`. This will install all Ruby dependencies, such as Jekyll and plugins.
   - **Windows users:** Read [this guide](https://jekyllrb.com/docs/windows/) to get Jekyll up and running without problems.
 
@@ -24,7 +24,7 @@ When completed, you'll be able to run the various commands provided from the com
 
 ## Using NPM scripts
 
-Our [package.json]({{ .Site.Params.repo }}/blob/v{{ .Site.Params.current_version }}/package.json) includes the following commands and tasks:
+Our [package.json]({{< param repo >}}/blob/v{{< param current_version >}}/package.json) includes the following commands and tasks:
 
 | Task | Description |
 | --- | --- |
@@ -38,7 +38,7 @@ Run `npm run` to see all the npm scripts.
 
 Bootstrap uses [Autoprefixer][autoprefixer] (included in our build process) to automatically add vendor prefixes to some CSS properties at build time. Doing so saves us time and code by allowing us to write key parts of our CSS a single time while eliminating the need for vendor mixins like those found in v3.
 
-We maintain the list of browsers supported through Autoprefixer in a separate file within our GitHub repository. See [/.browserslistrc]({{ .Site.Params.repo }}/blob/v{{ .Site.Params.current_version }}/.browserslistrc) for details.
+We maintain the list of browsers supported through Autoprefixer in a separate file within our GitHub repository. See [/.browserslistrc]({{< param repo >}}/blob/v{{< param current_version >}}/.browserslistrc) for details.
 
 ## Local documentation
 

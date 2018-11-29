@@ -162,10 +162,10 @@ Use spinners within buttons to indicate an action is currently processing or tak
 {{< /example >}}
 
 
-[color]:   {{ .Site.BaseURL }}/docs/{{ .Site.Params.docs_version }}/utilities/colors/
-[display]: {{ .Site.BaseURL }}/docs/{{ .Site.Params.docs_version }}/utilities/display/
-[flex]:    {{ .Site.BaseURL }}/docs/{{ .Site.Params.docs_version }}/utilities/flex/
-[float]:   {{ .Site.BaseURL }}/docs/{{ .Site.Params.docs_version }}/utilities/float/
-[margin]:  {{ .Site.BaseURL }}/docs/{{ .Site.Params.docs_version }}/utilities/spacing/
-[sizing]:  {{ .Site.BaseURL }}/docs/{{ .Site.Params.docs_version }}/utilities/sizing/
-[text]:    {{ .Site.BaseURL }}/docs/{{ .Site.Params.docs_version }}/content/typography/
+[color]:   {{ .Site.BaseURL }}/docs/{{< param docs_version >}}/utilities/colors/
+[display]: {{ .Site.BaseURL }}/docs/{{< param docs_version >}}/utilities/display/
+[flex]:    {{ .Site.BaseURL }}/docs/{{< param docs_version >}}/utilities/flex/
+[float]:   {{ .Site.BaseURL }}/docs/{{< param docs_version >}}/utilities/float/
+[margin]:  {{ .Site.BaseURL }}/docs/{{< param docs_version >}}/utilities/spacing/
+[sizing]:  {{ .Site.BaseURL }}/docs/{{< param docs_version >}}/utilities/sizing/
+[text]:    {{ .Site.BaseURL }}/docs/{{< param docs_version >}}/content/typography/

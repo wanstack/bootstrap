@@ -12,7 +12,7 @@ Bootstrap supports the **latest, stable releases** of all major browsers and pla
 
 Alternative browsers which use the latest version of WebKit, Blink, or Gecko, whether directly or via the platform's web view API, are not explicitly supported. However, Bootstrap should (in most cases) display and function correctly in these browsers as well. More specific support information is provided below.
 
-You can find our supported range of browsers and their versions [in our `.browserslistrc file`]({{ .Site.Params.repo }}/blob/v{{ .Site.Params.current_version }}/.browserslistrc):
+You can find our supported range of browsers and their versions [in our `.browserslistrc file`]({{< param repo >}}/blob/v{{< param current_version >}}/.browserslistrc):
 
 ```
 # https://github.com/browserslist/browserslist#readme
@@ -117,7 +117,7 @@ For Firefox, in addition to the latest normal stable release, we also support th
 
 Unofficially, Bootstrap should look and behave well enough in Chromium and Chrome for Linux, Firefox for Linux, and Internet Explorer 9, though they are not officially supported.
 
-For a list of some of the browser bugs that Bootstrap has to grapple with, see our [Wall of browser bugs]({{ .Site.BaseURL }}/docs/{{ .Site.Params.docs_version }}/browser-bugs/).
+For a list of some of the browser bugs that Bootstrap has to grapple with, see our [Wall of browser bugs]({{ .Site.BaseURL }}/docs/{{< param docs_version >}}/browser-bugs/).
 
 ## Internet Explorer
 
@@ -151,7 +151,7 @@ Throughout our v4 alpha and beta releases, we included incomplete and commented 
 
 Even in some modern browsers, printing can be quirky.
 
-As of Safari v8.0, use of the fixed-width `.container` class can cause Safari to use an unusually small font size when printing. See [issue #14868]({{ .Site.Params.repo }}/issues/14868) and [WebKit bug #138192](https://bugs.webkit.org/show_bug.cgi?id=138192) for more details. One potential workaround is the following CSS:
+As of Safari v8.0, use of the fixed-width `.container` class can cause Safari to use an unusually small font size when printing. See [issue #14868]({{< param repo >}}/issues/14868) and [WebKit bug #138192](https://bugs.webkit.org/show_bug.cgi?id=138192) for more details. One potential workaround is the following CSS:
 
 {{< highlight css >}}
 @media print {
